@@ -20,7 +20,7 @@ Java Development Kit (JDK) 8 or higher
 Any Java IDE (Eclipse, IntelliJ, NetBeans) or a simple text editor with CLI
 Steps to Run
 Clone or Download the Repository
-git clone https://github.com/your-repo/java-calculator.git
+git clone https://github.com/asadabbasse2006/java-calculator.git
 cd java-calculator
 Compile the Java Files
 javac *.java
