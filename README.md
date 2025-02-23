@@ -1,6 +1,6 @@
 Java Calculator
 📌 Overview
-This is a Graphical User Interface (GUI) Calculator built using Java Swing. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. The project follows a modular structure to improve readability and maintainability.
+This is a Graphical User Interface (GUI) Calculator built using Java Swing. It supports basic arithmetic operations such as addition, subtraction, multiplication, division, square, square root, cube and cube root. The project follows a modular structure to improve readability and maintainability.
 🎯 Features
 ✅ Basic Arithmetic: Addition, subtraction, multiplication, and division.
 ✅ Advanced Operations: Square, square root, cube, and cube root.
