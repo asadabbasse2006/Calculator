@@ -47,13 +47,12 @@ CalculatorApp/
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/asadabbasse2006/Calculator]
+   git clone https://github.com/asadabbasse2006/Calculator
    cd java-calculator
 
 ```bash
 javac *.java
 
-```bash
 java Calculator
 The application follows a modular architecture, keeping UI and logic separate for better maintainability.
 
