@@ -3,37 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalculatorApp</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #f7f9fc;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #1f4e79;
-        }
-        code, pre {
-            background: #eee;
-            padding: 10px;
-            display: block;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.08);
-        }
-    </style>
+
 </head>
 <body>
 <div class="container">
