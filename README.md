@@ -1,142 +1,158 @@
-# 🧮 Java Swing Calculator Application
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculatorApp</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #1f4e79;
+        }
+        code, pre {
+            background: #eee;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
 
-A **fully functional desktop calculator** built using **Java Swing**, demonstrating **Object-Oriented Programming (OOP)** principles and a **clean separation of concerns**.  
-The application provides a responsive graphical interface and supports both **basic** and **advanced** mathematical operations.
+<h1>📱 CalculatorApp</h1>
 
----
+<p>
+A modular Java calculator application built using clean architecture principles.
+Each class has a single responsibility, making the project easy to maintain and extend.
+</p>
 
-## 🚀 Project Overview
+<hr>
 
-The **Java Swing Calculator** is a modular desktop application designed to showcase:
+<h2>📂 Project Structure</h2>
 
-- Java Swing GUI development
-- Clean architecture (MVC-inspired design)
-- Maintainable and extensible OOP code
-- Practical event-driven programming
-
-All calculator features are implemented without external libraries, using only **standard Java (JDK 8+)**.
-
----
-
-## ✨ Features
-
-### 🔢 Arithmetic Operations
-- Addition (`+`)
-- Subtraction (`-`)
-- Multiplication (`×`)
-- Division (`/`)
-
-### 📐 Advanced Mathematical Functions
-- Square (`x²`)
-- Square Root (`√x`)
-- Cube (`x³`)
-- Cube Root (`³√x`)
-
-### 🧩 Input & Control
-- Numeric buttons (0–9)
-- Decimal point input
-- Equals (`=`) for evaluation
-
-### 🛠️ Utility Controls
-- **AC (All Clear):** Clears the entire display
-- **Backspace (←):** Deletes the last entered digit
-- **ON / OFF:** Enables or disables the calculator
-
-### 🖥️ User Interface
-- Built with **Java Swing**
-- Clean, responsive, and intuitive layout
-- Desktop-compatible across platforms
-
----
-
-## 🏗️ Project Architecture
-
-The project follows a **modular design** inspired by the **MVC (Model–View–Controller)** pattern.
-
+<pre>
 CalculatorApp/
 │
-├── Calculator.java # Application entry point
-├── CalcFrame.java # Main window & layout setup
-├── CalcTextField.java # Display component (input/output)
-├── CalcButtons.java # Button panel and UI controls
-├── CalcController.java # Handles user actions and events
-├── CalcFunctions.java # Core mathematical logic
-└── Operation.java # Enum for supported operations
+├── Calculator.java        # Application entry point
+├── CalcFrame.java         # Main window & layout setup
+├── CalcTextField.java     # Display component (input/output)
+├── CalcButtons.java       # Button panel and UI controls
+├── CalcController.java    # Handles user actions and events
+├── CalcFunctions.java     # Core mathematical logic
+└── Operation.java         # Enum for supported operations
+</pre>
 
-yaml
-Copy code
+<hr>
 
-### 🧠 Design Highlights
-- **UI and logic are fully separated**
-- **Controller handles all events**
-- **Math logic is isolated and reusable**
-- **Enums replace magic strings for safety**
+<h2>🧩 File Responsibilities</h2>
 
----
+<h3>🔹 Calculator.java</h3>
+<ul>
+<li>Program entry point</li>
+<li>Launches the calculator application</li>
+<li>Initializes the main frame</li>
+</ul>
 
-## 🛠️ Installation & Usage
+<h3>🔹 CalcFrame.java</h3>
+<ul>
+<li>Builds the main GUI window</li>
+<li>Manages layout and component placement</li>
+<li>Integrates buttons and display</li>
+</ul>
 
-### ✅ Prerequisites
-- Java Development Kit (**JDK 8 or higher**)
-- Any Java IDE (IntelliJ IDEA, Eclipse, NetBeans)  
-  *or* a configured command-line environment
+<h3>🔹 CalcTextField.java</h3>
+<ul>
+<li>Handles calculator display</li>
+<li>Shows user input and results</li>
+<li>Manages text formatting</li>
+</ul>
 
----
+<h3>🔹 CalcButtons.java</h3>
+<ul>
+<li>Creates all calculator buttons</li>
+<li>Defines button layout</li>
+<li>Sends button events to controller</li>
+</ul>
 
-### ▶️ Run via Command Line
+<h3>🔹 CalcController.java</h3>
+<ul>
+<li>Processes user interactions</li>
+<li>Connects UI with calculation logic</li>
+<li>Maintains application state</li>
+</ul>
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/asadabbasse2006/Calculator
-   cd Calculator
-Compile the source files
+<h3>🔹 CalcFunctions.java</h3>
+<ul>
+<li>Implements mathematical operations</li>
+<li>Performs calculations</li>
+<li>Handles edge cases</li>
+</ul>
 
-bash
-Copy code
+<h3>🔹 Operation.java</h3>
+<ul>
+<li>Enum representing supported operations</li>
+<li>Improves code readability</li>
+<li>Prevents magic strings</li>
+</ul>
+
+<hr>
+
+<h2>🚀 Features</h2>
+<ul>
+<li>Clean MVC-like structure</li>
+<li>Modular and maintainable code</li>
+<li>Easy to extend with new operations</li>
+<li>Java Swing-based GUI</li>
+</ul>
+
+<hr>
+
+<h2>🛠️ Requirements</h2>
+<ul>
+<li>Java JDK 8 or higher</li>
+<li>Any Java IDE (IntelliJ, Eclipse, VS Code)</li>
+</ul>
+
+<hr>
+
+<h2>▶️ How to Run</h2>
+
+<pre>
 javac *.java
-Run the application
-
-bash
-Copy code
 java Calculator
-🧪 Error Handling
-Division by zero and invalid operations are handled gracefully
+</pre>
 
-The calculator never crashes during invalid input
+<hr>
 
-Display resets safely when powered OFF
+<h2>📌 Future Improvements</h2>
+<ul>
+<li>Scientific calculator mode</li>
+<li>Keyboard input support</li>
+<li>Calculation history</li>
+<li>Dark mode UI</li>
+</ul>
 
-📈 Code Quality Improvements
-This version includes:
+<p>⭐ Feel free to fork and enhance!</p>
 
-✔ MVC-style separation
-
-✔ Centralized event handling
-
-✔ Safer numeric calculations
-
-✔ Cleaner button creation
-
-✔ Readable and extensible structure
-
-All improvements were made without changing calculator features or behavior.
-
-📌 Future Enhancements (Optional)
-(Not included in this version)
-
-Keyboard input support
-
-Dark mode UI
-
-JavaFX version
-
-Unit testing with JUnit
-
-Memory (M+, M-, MR)
-
-👤 Author
-Asad Abbas
-GitHub: asadabbasse2006
-
-📜 License
-This project is open-source and available for educational and personal use.
+</div>
+</body>
+</html>
